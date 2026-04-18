@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="kentaの自己紹介ページ。アプリ開発とAI活用に挑戦する、少し寝坊が得意な情報系学生のシングルページサイト。"
-    />
-    <meta name="theme-color" content="#f4eee4" />
+    <meta name="description" content="kentaの自己紹介ページ" />
+    <meta name="theme-color" content="#f7f7f5" />
     <title>kenta | My Introduction</title>
     <script>
       document.documentElement.classList.add("js");
@@ -16,183 +13,98 @@
   </head>
   <body>
     <div class="page-shell">
-      <div class="ambient ambient-one" aria-hidden="true"></div>
-      <div class="ambient ambient-two" aria-hidden="true"></div>
-      <div class="grid-overlay" aria-hidden="true"></div>
-
       <header class="site-header">
-        <a class="brand" href="#top">
-          <span class="brand-mark">K</span>
-          <span class="brand-text">kenta</span>
-        </a>
+        <div class="header-inner">
+          <a class="brand" href="#top">kenta</a>
 
-        <nav class="site-nav" aria-label="ページ内ナビゲーション">
-          <a href="#about">About</a>
-          <a href="#ai">AI</a>
-          <a href="#future">Future</a>
-          <a href="#challenge">Challenge</a>
-        </nav>
+          <nav class="site-nav" aria-label="ページ内ナビゲーション">
+            <a href="#introduction">自己紹介</a>
+            <a href="#ai">AIとは</a>
+            <a href="#future">向き合い方</a>
+            <a href="#challenge">授業で挑戦したいこと</a>
+          </nav>
+        </div>
       </header>
 
-      <main id="top">
-        <section class="hero reveal" data-section id="about">
-          <div class="hero-copy">
-            <p class="eyebrow">Late Start, Fast Build</p>
-            <h1>
-              寝坊は得意。<br />
-              でもこれからは、
-              <span>アイデアを形にする人</span>
-              になりたい。
-            </h1>
-            <p class="lead">
-              ハンドルネームは <strong>kenta</strong>。情報系の分野に興味があり、
-              最近はアプリ開発やAIを活用した開発を始めています。
+      <main id="top" class="content">
+        <section class="intro-card reveal">
+          <div class="intro-text">
+            <p class="intro-label">自己紹介ページ</p>
+            <h1 class="intro-title">kenta</h1>
+          </div>
+
+          <div class="avatar-panel">
+            <img
+              src="assets/kenta-avatar.svg"
+              alt="kentaのアバターイラスト"
+            />
+          </div>
+        </section>
+
+        <section class="section-card reveal" data-section id="introduction">
+          <div class="section-heading">
+            <h2>【自己紹介】</h2>
+          </div>
+
+          <div class="section-body">
+            <p>ハンドルネームは kenta です。</p>
+            <p>
+              今の所得意と言えることは寝坊だけです。情報系の分野に興味があり、最近はアプリ開発やAIを活用した開発をし始めました。
             </p>
-
-            <div class="hero-actions">
-              <a class="button primary" href="#ai">AIとの関係を見る</a>
-              <a class="button ghost" href="#challenge">この授業で挑戦したいこと</a>
-            </div>
-
-            <div class="hero-facts">
-              <article class="fact-card reveal" data-delay="0.05">
-                <span class="fact-label">ハンドルネーム</span>
-                <strong>kenta</strong>
-              </article>
-              <article class="fact-card reveal" data-delay="0.15">
-                <span class="fact-label">最近の関心</span>
-                <strong>アプリ開発 / AI活用</strong>
-              </article>
-              <article class="fact-card reveal" data-delay="0.25">
-                <span class="fact-label">今の所得意</span>
-                <strong>寝坊</strong>
-              </article>
-            </div>
-          </div>
-
-          <div class="hero-visual reveal" data-delay="0.2">
-            <div class="avatar-frame">
-              <img
-                src="assets/kenta-avatar.svg"
-                alt="kentaをイメージした、少し眠そうな雰囲気のオリジナルアバターイラスト"
-              />
-            </div>
-            <div class="orbit-card">
-              <span class="orbit-label">AIとの距離感</span>
-              <strong>優秀で従順な後輩</strong>
-              <p>かなり頼っていて、ときどきかなりこき使っています。</p>
-            </div>
           </div>
         </section>
 
-        <section class="story reveal" data-section id="ai">
+        <section class="section-card reveal" data-section id="ai">
           <div class="section-heading">
-            <p class="eyebrow">My AI View</p>
-            <h2>AIは、便利ツール以上の「強化パーツ」</h2>
+            <h2>【自分にとってAIとはどういう存在か】</h2>
           </div>
 
-          <div class="story-grid">
-            <article class="story-card reveal" data-delay="0.05">
-              <h3>優秀で従順な後輩みたいな存在</h3>
-              <p>
-                自分にとってAIは、日常的にかなり頼れる存在です。頼りすぎていて、
-                正直かなりこき使っている気もします。
-              </p>
-            </article>
-
-            <article class="story-card emphasis reveal" data-delay="0.15">
-              <h3>できることを増やしてくれる拡張装備</h3>
-              <p>
-                単なる便利ツールではなく、自分の能力を拡張してくれる「強化パーツ」
-                のような存在だと感じています。
-              </p>
-            </article>
-
-            <article class="story-card reveal" data-delay="0.25">
-              <h3>一人では届かない場所まで連れていく</h3>
-              <p>
-                アイデアを広げたり、自分だけでは持ち得ない技術を補ってくれることで、
-                できることの幅が大きく広がっています。
-              </p>
-            </article>
+          <div class="section-body">
+            <p>
+              自分にとってAIは、優秀で従順な後輩のような存在です。<br />
+              日常的にかなり頼っていて、正直かなりこき使っている気もします。
+            </p>
+            <p>
+              ただ、単なる便利ツールというよりは、自分の能力を拡張してくれる「強化パーツ」のような存在で、<br />
+              アイデアを広げたり、自分だけでは持ち得ない技術を補ってくれることで、できることの幅が大きく広がっていると感じています。
+            </p>
           </div>
         </section>
 
-        <section class="dialogue reveal" data-section id="future">
+        <section class="section-card reveal" data-section id="future">
           <div class="section-heading">
-            <p class="eyebrow">How I Want To Work With AI</p>
-            <h2>本気で一緒に考えて、止めるときは止める</h2>
+            <h2>【今後AIとどう向き合いたいか】</h2>
           </div>
 
-          <div class="dialogue-layout">
-            <div class="quote-panel reveal" data-delay="0.05">
-              <p class="quote-mark">“</p>
-              <p class="quote-text">
-                本気で一緒に考える、間違っていたら止める、でも前に進ませる
-              </p>
-              <p class="quote-note">
-                AIに「どう向き合うべきか」を聞いたときに返ってきた言葉。
+          <div class="section-body">
+            <div class="quote-box">
+              <p>
+                AIに「どう向き合うべきか」を聞いてみたところ、<br />
+                「本気で一緒に考える、間違っていたら止める、でも前に進ませる」<br />
+                という答えが返ってきました。
               </p>
             </div>
-
-            <div class="dialogue-cards">
-              <article class="mini-card reveal" data-delay="0.15">
-                <h3>いい意味で、親友ポジション</h3>
-                <p>
-                  ラブコメでいう、めちゃくちゃいいやつな主人公の親友みたいなことを
-                  言われたので、こちらも愛を持って接していきたいです。
-                </p>
-              </article>
-
-              <article class="mini-card reveal" data-delay="0.25">
-                <h3>前に進ませる相棒として</h3>
-                <p>
-                  ただ従うだけでなく、一緒に考えて、必要ならブレーキも踏める。
-                  そんな関係で使っていきたいと思っています。
-                </p>
-              </article>
-            </div>
+            <p>
+              ラブコメの、めちゃくちゃいいやつな主人公の親友みたいなこと言われたので、自分もAIに対して愛を持って接していきたいです。
+            </p>
           </div>
         </section>
 
-        <section class="challenge reveal" data-section id="challenge">
+        <section class="section-card reveal" data-section id="challenge">
           <div class="section-heading">
-            <p class="eyebrow">Challenge In Class</p>
-            <h2>この授業で、思いつきを価値に変える力を育てたい</h2>
+            <h2>【この授業を通して、どんなことに挑戦したいか】</h2>
           </div>
 
-          <div class="challenge-grid">
-            <article class="challenge-card reveal" data-delay="0.05">
-              <span class="challenge-step">01</span>
-              <h3>アイデアを素早く形にする</h3>
-              <p>
-                アプリやサービスとして、思いついたものをすぐ形にできる力を身につけたいです。
-              </p>
-            </article>
-
-            <article class="challenge-card reveal" data-delay="0.15">
-              <span class="challenge-step">02</span>
-              <h3>専門知識を増やす</h3>
-              <p>
-                AI活用だけに頼らず、情報系の知識そのものも広げて、自分で理解して作れる範囲を増やしたいです。
-              </p>
-            </article>
-
-            <article class="challenge-card reveal" data-delay="0.25">
-              <span class="challenge-step">03</span>
-              <h3>価値を生み出せる人になる</h3>
-              <p>
-                自分のアイデアで価値をつくり、それを実現できる人間になることが目標です。
-              </p>
-            </article>
+          <div class="section-body">
+            <p>
+              この授業を通して、自分のアイデアをアプリやサービスとして素早く形にできる力を身につけたいです。
+            </p>
+            <p>
+              また、専門知識も増やしながら、自分のアイデアで価値を生み出し、それを実現できる人間になることを目標としています。
+            </p>
           </div>
         </section>
       </main>
-
-      <footer class="site-footer reveal">
-        <p>kenta introduction page</p>
-        <p>Built with curiosity, a little sleepiness, and a lot of AI support.</p>
-      </footer>
     </div>
 
     <div class="scroll-indicator" aria-hidden="true">
